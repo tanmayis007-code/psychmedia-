@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S Tanmayi | Psychology Digital Portfolio</title>
+<meta name="description" content="Digital portfolio of S Tanmayi, BSc Psychology student at PES University, focused on developmental and rehabilitation psychology and neurodiversity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--surf:#fff;--text:#1d2433;--mute:#5a6378;--teal:#1b7f84;--vio:#6b50bd;--sun:#b9700f;--line:#dde1ec;--tint:#e8f3f2;--tint2:#efeafa;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121722;--surf:#1b2231;--text:#e8ebf4;--mute:#a4adc2;--teal:#5fc4c8;--vio:#b4a2f0;--sun:#f0b45c;--line:#2d364a;--tint:#173133;--tint2:#251f3d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121722;--surf:#1b2231;--text:#e8ebf4;--mute:#a4adc2;--teal:#5fc4c8;--vio:#b4a2f0;--sun:#f0b45c;--line:#2d364a;--tint:#173133;--tint2:#251f3d;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 Figtree,system-ui,-apple-system,Segoe UI,sans-serif}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4vw,2.6rem)}h3{font-size:1.35rem}h4{margin:0 0 .3em;font-size:1.05rem}
+p{margin:0 0 1em;max-width:68ch}a{color:var(--teal)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--vio);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:72px 0 8px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surf);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--surf);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;height:58px;white-space:nowrap}
+nav b{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:1.25rem;margin-right:auto;padding-right:16px}
+nav a{color:var(--mute);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:99px}
+nav a:hover{background:var(--tint);color:var(--text)}
+.hero{position:relative;padding:72px 0 40px;overflow:hidden}
+.circles{position:absolute;right:-60px;top:20px;width:min(520px,80vw);aspect-ratio:1;z-index:0;opacity:.9}
+.circles i{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+:root[data-theme="dark"] .circles i{mix-blend-mode:screen}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .circles i{mix-blend-mode:screen}}
+.circles i:nth-child(1){width:60%;height:60%;left:5%;top:8%;background:#8fd3cf}
+.circles i:nth-child(2){width:55%;height:55%;left:38%;top:0;background:#c6b8f2}
+.circles i:nth-child(3){width:50%;height:50%;left:25%;top:42%;background:#f6cf8d}
+.hero .in{position:relative;z-index:1;max-width:640px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);margin-bottom:.25em}
+.tag{font-size:1.25rem;color:var(--mute);margin-bottom:24px}
+.btn{display:inline-block;background:var(--text);color:var(--bg);padding:12px 22px;border-radius:99px;text-decoration:none;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
+.chips li{background:var(--surf);border:1px solid var(--line);padding:5px 14px;border-radius:99px;font-size:.95rem}
+.about{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start}
+.photo{width:200px;aspect-ratio:4/5;border-radius:100px 100px 20px 20px;background:linear-gradient(160deg,#8fd3cf,#c6b8f2);display:grid;place-items:center;font:400 3.4rem "DM Serif Display",Georgia,serif;color:#1d2433}
+.photo small{display:block;font:500 .75rem Figtree,sans-serif;text-align:center;margin-top:-30px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:18px}
+.box{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px}
+.tl{border-left:3px solid var(--teal);margin:0;padding:0 0 0 24px;list-style:none}
+.tl li{position:relative;padding-bottom:26px}
+.tl li::before{content:"";position:absolute;left:-33px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--vio)}
+.when{color:var(--vio);font-weight:600;font-size:.95rem;margin:0 0 2px}
+.edu{display:grid;gap:12px;margin-top:22px}
+.edu div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:10px;flex-wrap:wrap}
+.edu span{color:var(--mute)}
+.infog{background:var(--tint);border-radius:24px;padding:30px}
+.mf{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:14px;overflow:hidden;margin-bottom:14px;border:1px solid var(--line);background:var(--surf)}
+.mf>div{padding:16px 18px}.mf>div:first-child{background:var(--tint2)}
+.mf small{display:block;font-weight:600;color:var(--vio);margin-bottom:2px}
+.mf>div:last-child small{color:var(--teal)}
+.note{font-size:.9rem;color:var(--mute)}
+.post{max-width:700px;margin:0 auto;background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:34px}
+.post h3{font-size:1.7rem}
+.car{display:flex;gap:16px;overflow-x:auto;padding:6px 2px 18px;scroll-snap-type:x mandatory}
+.slide{flex:0 0 min(270px,78vw);aspect-ratio:1;scroll-snap-align:start;border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:center;color:#1d2433}
+.slide b{font:400 1.5rem/1.2 "DM Serif Display",Georgia,serif;margin-bottom:8px}
+.slide:nth-child(1){background:#bfe5e1}.slide:nth-child(2){background:#d9d0f6}.slide:nth-child(3){background:#f8dfae}.slide:nth-child(4){background:#cfe4c4}.slide:nth-child(5){background:#f3c6d3}
+.pill{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.pill div{background:var(--surf);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px}
+.pill div:nth-child(2){border-top-color:var(--vio)}.pill div:nth-child(3){border-top-color:var(--sun)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surf)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.97rem}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--tint)}tr:last-child td{border-bottom:0}
+details{background:var(--surf);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+summary{cursor:pointer;padding:15px 20px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--vio);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 20px 8px}details li{margin-bottom:6px}
+.refs{padding-left:1.4em}.refs li{margin-bottom:9px;padding-left:.4em;max-width:80ch}
+footer{margin-top:72px;border-top:1px solid var(--line);padding:30px 0;color:var(--mute);font-size:.93rem}
+@media (max-width:760px){.about,.cols,.mf,.pill{grid-template-columns:1fr}.photo{width:150px}.circles{opacity:.55}section{padding-top:56px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap"><b>S Tanmayi</b>
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#content">Content</a><a href="#strategy">Campaign</a><a href="#ethics">Ethics</a><a href="#reflection">Reflection</a><a href="#references">References</a></div></nav>
+
+<header class="hero"><div class="circles" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap"><div class="in">
+<h1>Every mind grows in its own way.</h1>
+<p class="tag">Minds in Development: a psychology portfolio by S Tanmayi on understanding how children learn, grow and recover, and why support should fit the person.</p>
+<ul class="chips"><li>Developmental psychology</li><li>Rehabilitation psychology</li><li>Neurodiversity</li></ul>
+<a class="btn" href="#content">See my psychology content</a>
+</div></div></header>
+
+<main class="wrap">
+<section id="about"><h2>About me</h2>
+<div class="about">
+<div><div class="photo" role="img" aria-label="Placeholder for S Tanmayi's profile photograph">ST</div></div>
+<div>
+<p>I’m S Tanmayi, a BSc Psychology student in semester 3 at PES University, Bengaluru. I’m interested in how children develop, how people adapt and recover after difficulty, and how we can build classrooms and communities that include different kinds of minds.</p>
+<p>Through volunteering with U&amp;I Foundation and interning at a child development centre, I’ve seen how small adjustments in how we teach, speak and wait can change a child’s experience of learning.</p>
+<div class="cols">
+<div class="box"><h4>Areas of interest</h4><p style="margin:0">Developmental psychology, rehabilitation psychology and neurodiversity.</p></div>
+<div class="box"><h4>Skills</h4><p style="margin:0">Communication, teamwork, leadership, empathy, organisation, research and academic writing basics.</p></div>
+</div>
+<p style="margin-top:18px">Contact: <a href="mailto:tanmayis007@gmail.com">tanmayis007@gmail.com</a></p>
+</div></div></section>
+
+<section id="experience"><h2>Experience and education</h2>
+<div class="cols" style="align-items:start">
+<div><h3>Volunteering and internship</h3>
+<ol class="tl">
+<li><p class="when">Ongoing</p><h4>Leader, U&amp;I Foundation</h4><p>Manage volunteers at a centre and make sure classes for children run smoothly.</p></li>
+<li><p class="when">June to July 2026, six weeks</p><h4>Intern, Sakya Foundation</h4><p>At a child development centre, I observed and worked alongside children with developmental delays, autism and ADHD. I learned about structured routines, patient communication and individual support. No individual details are shared here.</p></li>
+<li><p class="when">2025 to 2026</p><h4>Volunteer teacher, U&amp;I Foundation</h4><p>Taught children aged about 9 to 13 from underprivileged backgrounds.</p></li>
+</ol></div>
+<div><h3>Education</h3>
+<div class="edu">
+<div><b>BSc Psychology, PES University</b><span>Semester 3</span></div>
+<div><b>Mount Carmel PU College (PCMC)</b><span>2024 to 2025</span></div>
+<div><b>Gopalan PU College (PCMC)</b><span>2023 to 2024</span></div>
+<div><b>HAL New Public School</b><span>2011 to 2023, up to 10th grade</span></div>
+</div></div></div></section>
+
+<section id="content"><h2>Psychology content I created</h2>
+<p>Three original pieces in three formats: an infographic, a blog post and a social media carousel. They are educational, not diagnostic, and written in my own words from the sources in the references.</p>
+
+<h3 style="margin-top:34px">1. Infographic: neurodiversity myths and facts</h3>
+<div class="infog">
+<div class="mf"><div><small>Myth</small>Neurodivergent people are all intellectually disabled.</div><div><small>Fact</small>Autism, ADHD and dyslexia are differences in how brains process information, and they occur across all levels of ability.</div></div>
+<div class="mf"><div><small>Myth</small>It is caused by poor parenting.</div><div><small>Fact</small>These are neurodevelopmental differences with biological roots. Parenting does not cause them, though supportive environments help children thrive.</div></div>
+<div class="mf"><div><small>Myth</small>Children grow out of it.</div><div><small>Fact</small>Neurodivergence is lifelong. What changes is the support a person needs and the skills they build.</div></div>
+<p class="note" style="margin:0">Neurodiversity is the idea that variation in the human brain is natural (Singer, 1999; Armstrong, 2010). Original artwork, built in HTML and CSS.</p>
+</div>
+
+<h3 style="margin-top:44px">2. Blog post: what is rehabilitation psychology?</h3>
+<article class="post">
+<h3>Helping people live fully after injury, illness or disability</h3>
+<p>When someone gets a chronic illness, a spinal cord injury or a disability, medical treatment is only part of recovery. Rehabilitation psychology looks at the rest: how a person adjusts, what they want their life to look like, and what stands in the way.</p>
+<p>Rehabilitation psychologists work in teams alongside doctors, physiotherapists, occupational therapists and speech therapists. They support coping and motivation, help families understand what is happening, and work to remove barriers in the environment, not only in the person.</p>
+<p>A key idea comes from Beatrice Wright (1983): focus on a person’s strengths and abilities, and notice how society’s attitudes and physical barriers can disable people as much as the condition itself. For children, rehabilitation often means building skills for play, learning and communication, with the family involved at every step.</p>
+<p style="margin:0"><b>Takeaway:</b> recovery is about participation in life, not only fixing a problem.</p>
+</article>
+
+<h3 style="margin-top:44px">3. Social media carousel: supporting a child who learns differently</h3>
+<div class="car" tabindex="0" aria-label="Carousel of five slides, scroll sideways">
+<div class="slide"><b>Support a child who learns differently</b>Five ideas for volunteers, siblings and classmates. Swipe along.</div>
+<div class="slide"><b>Break it into steps</b>Teach one small step at a time, then add the next. Researchers call this scaffolding.</div>
+<div class="slide"><b>Show, don’t only tell</b>Use pictures, gestures and examples alongside words.</div>
+<div class="slide"><b>Give time to respond</b>Wait a few extra seconds. Rushing can shut thinking down.</div>
+<div class="slide"><b>Praise the effort</b>“You kept trying” builds more confidence than “you’re so smart.”</div>
+</div>
+<p class="note">Slide 2 draws on Wood, Bruner and Ross (1976). General awareness only. If you are worried about a child’s development, speak to a paediatrician or child development specialist.</p>
+<p class="note"><b>Multimedia and accessibility:</b> infographic, long-form writing and illustrated carousel, all original. No third-party images are used, so no licence credits are needed. Text is real text with strong contrast.</p>
+</section>
+
+<section id="strategy"><h2>Content strategy: one-week campaign</h2>
+<p><b>Campaign:</b> “Every Mind Learns Differently”, a week of neurodiversity awareness for college students.</p>
+<p><b>Audience:</b> undergraduates aged 18 to 22, including classmates who may volunteer, teach or work with children someday. <b>Platform:</b> Instagram, with carousels for learning, reels for short explainers and stories for polls.</p>
+<div class="pill">
+<div><h4>Understand it</h4>Myths, facts and the basics of neurodiversity.</div>
+<div><h4>Include it</h4>Everyday habits that make classes and events welcoming.</div>
+<div><h4>Support it</h4>Where to learn more and how to help.</div>
+</div>
+<div class="tw"><table><caption class="note" style="text-align:left;padding:10px 14px">One-week content calendar</caption>
+<tr><th>Day</th><th>Pillar</th><th>Format</th><th>Post</th></tr>
+<tr><td>Mon</td><td>Understand it</td><td>Carousel</td><td>What does neurodiversity mean?</td></tr>
+<tr><td>Tue</td><td>Understand it</td><td>Infographic</td><td>Five myths about autism and ADHD</td></tr>
+<tr><td>Wed</td><td>Include it</td><td>Reel, 30 seconds</td><td>Small changes that make a classroom welcoming</td></tr>
+<tr><td>Thu</td><td>Include it</td><td>Story</td><td>Poll: what helps you focus best?</td></tr>
+<tr><td>Fri</td><td>Support it</td><td>Carousel</td><td>How to support a child who learns differently</td></tr>
+<tr><td>Sat</td><td>Support it</td><td>Story</td><td>Volunteer with children: how to start</td></tr>
+<tr><td>Sun</td><td>Support it</td><td>Single post</td><td>Weekly recap and where to learn more</td></tr>
+</table></div></section>
+
+<section id="ethics"><h2>Ethics, copyright and legal awareness</h2>
+<p>Tap a topic to read it. This is awareness for a student portfolio, not legal advice.</p>
+<details><summary>APA ethics and professional behaviour</summary><div>
+<p>The APA Ethics Code rests on five principles: beneficence and nonmaleficence, fidelity and responsibility, integrity, justice, and respect for people’s rights and dignity. I am a student, not a licensed psychologist, and I follow their spirit.</p>
+<ul><li>Stay accurate and cite sources. No exaggerated claims.</li><li>Know my limits: no diagnosing or treating anyone online.</li><li>Public content is general information and creates no therapist and client relationship.</li><li>Avoid harm: no graphic or stigmatising descriptions, and signpost support where needed.</li><li>Be honest about my role and experience.</li></ul></div></details>
+<details><summary>Confidentiality and online boundaries</summary><div>
+<ul><li>No case details: my internship and teaching are described only by what I learned, never about individual children, families or sessions.</li><li>Examples are fictional or general, so nobody can be recognised.</li><li>I do not post anyone’s photo, words or private messages without clear permission.</li><li>I do not give personal advice in comments or messages. I point people to qualified professionals.</li><li>I share only my email, not my phone number.</li></ul></div></details>
+<details><summary>Copyright and Creative Commons</summary><div>
+<p>In India, the Copyright Act, 1957 protects original written, artistic and audiovisual work automatically. Being easy to find online does not mean it is free to use.</p>
+<ul><li>Ideas and facts are not protected, but the way they are expressed is. I write in my own words.</li><li>Creative Commons licences let creators permit reuse: BY requires credit, SA requires the same licence, NC bars commercial use and ND bars changes.</li><li>I cite every source in APA style and do not copy from websites or other students.</li></ul></div></details>
+<details><summary>Responsible image sourcing and attribution</summary><div>
+<ul><li>I use my own work, public domain or openly licensed images, and always check the licence.</li><li>Credits list title, creator, source and licence. This portfolio uses no third-party images.</li><li>Identifiable people appear only with their consent. Photographs of children are never shared.</li><li>Visuals are respectful and avoid stereotypes. Text has strong contrast and images get alt text.</li></ul></div></details>
+<details><summary>Information Technology Act, 2000</summary><div>
+<ul><li>Sections 43 and 66: unauthorised access to or damage of computers and data.</li><li>Sections 66C and 66D: identity theft and cheating by impersonation online.</li><li>Section 66E: sharing someone’s private images without consent violates privacy.</li><li>Section 67: publishing obscene material electronically is punishable.</li><li>Section 79: platforms get conditional protection as intermediaries, while users remain responsible for what they post.</li></ul>
+<p>Section 66A was struck down by the Supreme Court of India in 2015. I never impersonate anyone or share private material.</p></div></details>
+<details><summary>Digital Personal Data Protection Act, 2023</summary><div>
+<ul><li>Consent must be free, specific, informed and unambiguous, and it can be withdrawn.</li><li>Collect only what is needed and use it only for the stated purpose.</li><li>People can access, correct and erase their data.</li><li>Data of anyone under 18 needs verifiable parental consent.</li></ul>
+<p>I apply this by publishing only my own email, using no forms, cookies or visitor tracking on this page, and showing no data about children.</p></div></details>
+<p class="note">This site is educational and is not therapy, diagnosis or crisis support. If you are in distress, contact a qualified professional or Tele-MANAS at 14416.</p>
+</section>
+
+<section id="reflection"><h2>Reflection</h2>
+<p>Making this portfolio showed me that good psychology communication means turning research into something a busy reader can use in thirty seconds, without losing accuracy. I built skills in visual design, content planning, source checking and writing for a specific audience, and I learned to treat privacy as part of the design, not an afterthought. The hardest parts were explaining ideas like neurodiversity and scaffolding simply but correctly, deciding what experiences to leave out to protect the children I worked with, and keeping the design creative yet readable.</p></section>
+
+<section id="references"><h2>References</h2>
+<ol class="refs">
+<li>American Psychological Association. (2017). <i>Ethical principles of psychologists and code of conduct</i>. https://www.apa.org/ethics/code</li>
+<li>Armstrong, T. (2010). <i>Neurodiversity: Discovering the extraordinary gifts of autism, ADHD, dyslexia, and other brain differences</i>. Da Capo Lifelong Books.</li>
+<li>Creative Commons. (n.d.). <i>About CC licenses</i>. https://creativecommons.org/share-your-work/cclicenses/</li>
+<li>Government of India. (1957). <i>The Copyright Act, 1957</i>.</li>
+<li>Government of India. (2000). <i>The Information Technology Act, 2000</i>.</li>
+<li>Government of India. (2023). <i>The Digital Personal Data Protection Act, 2023</i>.</li>
+<li>Singer, J. (1999). “Why can’t you be normal for once in your life?” From a “problem with no name” to the emergence of a new category of difference. In M. Corker &amp; S. French (Eds.), <i>Disability discourse</i> (pp. 59–67). Open University Press.</li>
+<li>Wood, D., Bruner, J. S., &amp; Ross, G. (1976). The role of tutoring in problem solving. <i>Journal of Child Psychology and Psychiatry, 17</i>(2), 89–100.</li>
+<li>Wright, B. A. (1983). <i>Physical disability: A psychosocial approach</i> (2nd ed.). Harper &amp; Row.</li>
+<li>Illustrations, infographic and layout: original work by S Tanmayi. No third-party media used.</li>
+</ol></section>
+</main>
+
+<footer><div class="wrap"><b>S Tanmayi</b>, BSc Psychology, PES University. <a href="mailto:tanmayis007@gmail.com">tanmayis007@gmail.com</a></div></footer>
+</body>
+</html>
